@@ -94,8 +94,9 @@ export default function Hero() {
 
           {/* description */}
           <p className="text-gray-500 text-lg max-w-xl leading-relaxed mb-10">
-            Орчин үеийн веб апп хийдэг developer. React + Tailwind ашиглан
-            хэрэглэгчдэд хурдан, modern, clean UI бүтээдэг.
+            I’m a passionate frontend developer with a love for crafting
+            beautiful and functional web experiences. I specialize in React and
+            have a knack for UI/UX design.
           </p>
 
           {/* buttons */}

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
 const statsData = [
-  { value: 12, suffix: "+", label: "Дууссан проект" },
-  { value: 2, suffix: " жил", label: "Туршлага" },
-  { value: 10, suffix: "+", label: "Технологи" },
-  { value: 500, suffix: "+", label: "GitHub commit" },
+  { value: 2, suffix: "", label: "Finished Projects" },
+  { value: 3, suffix: " years", label: "Experience" },
+  { value: 10, suffix: "+", label: "Technologies" },
+  { value: 500, suffix: "+", label: "GitHub Commits" },
 ];
 
 // ================= CUSTOM HOOK =================
@@ -92,7 +92,10 @@ export default function About() {
           </p>
 
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Би хэн бэ?
+            Who is
+            <span className="ml-5 text-[#00FF94] transition-all duration-300 hover:tracking-widest cursor-default">
+              Temuulen
+            </span>
           </h2>
 
           {/* glass panel */}
@@ -104,13 +107,14 @@ export default function About() {
                        hover:shadow-[0_0_40px_rgba(0,255,148,0.12)]"
           >
             <p className="text-gray-400 leading-relaxed mb-4">
-              Би вэб хөгжүүлэлтэд дуртай developer. React, JavaScript, Tailwind
-              CSS ашиглан цэвэр, хурдан, modern UI бүтээдэг.
+              I’m a passionate frontend developer with a love for crafting
+              beautiful and functional web experiences. I specialize in React
+              and have a knack for UI/UX design.
             </p>
 
             <p className="text-gray-400 leading-relaxed">
-              Би open-source project дээр ажиллаж, шинэ технологи байнга
-              судалдаг.
+              I work on open-source projects and constantly explore new
+              technologies.
             </p>
           </div>
 
