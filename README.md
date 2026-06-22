@@ -26,16 +26,18 @@ JavaScript (ES6+)
 
 ### Project Structure
 
+```bash
 src/
 ├── components/
-│ ├── Navbar.jsx
-│ ├── Hero.jsx
-│ ├── About.jsx
-│ ├── Project.jsx
-│ ├── Skill.jsx
-│ └── Contact.jsx
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── About.jsx
+│   ├── Project.jsx
+│   ├── Skill.jsx
+│   └── Contact.jsx
 ├── App.jsx
 └── main.jsx
+```
 
 ## Author
 
