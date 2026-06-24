@@ -46,7 +46,7 @@ export default function Projects() {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative p-[1px] rounded-2xl bg-gradient-to-br from-white/10 to-white/5 block"
+            className="group relative block h-full w-full cursor-pointer p-[1px] rounded-2xl bg-gradient-to-br from-white/10 to-white/5"
           >
             {/* Inner card */}
             <div
