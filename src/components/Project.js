@@ -1,21 +1,28 @@
 const projects = [
   {
     title: "Portfolio Website",
-    description: "React + Tailwind ашиглан хийсэн personal portfolio UI.",
+    description: "Personal portfolio UI using React + Tailwind.",
     tech: ["React", "Tailwind", "Vite"],
     link: "https://coupsoft.vercel.app",
   },
   {
     title: "Todo App",
-    description: "CRUD үйлдэлтэй simple todo application.",
+    description: "Todo app with localStorage using React + Tailwind.",
     tech: ["React", "LocalStorage", "Vite", "Tailwind"],
     link: "https://coupsoft-todo.vercel.app",
   },
   {
     title: "Weather App",
-    description: "API ашиглан realtime weather мэдээлэл харуулна.",
-    tech: ["React", "API"],
-    link: "https://your-weather-app.vercel.app",
+    description:
+      "Simple weather app using React + Tailwind + OpenWeatherMap API.",
+    tech: ["React", "API", "Tailwind", "Vite"],
+    link: "https://coupsoft-weather.vercel.app",
+  },
+  {
+    title: "Login Page",
+    description: "Simple login page using Next + Tailwind.",
+    tech: ["Next", "Tailwind", "Vercel"],
+    link: "https://coupsoft-login.vercel.app",
   },
 ];
 
@@ -39,7 +46,7 @@ export default function Projects() {
       </h2>
 
       {/* Grid */}
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-4 gap-6">
         {projects.map((project, index) => (
           <a
             key={index}

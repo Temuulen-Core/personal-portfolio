@@ -20,7 +20,7 @@ export default function Contact() {
             </h2>
 
             <p className="text-gray-400 mt-3">
-              Let’s build something amazing together
+              Let's build something amazing together
             </p>
 
             {/* small glow line */}
