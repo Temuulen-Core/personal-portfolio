@@ -3,16 +3,19 @@ const projects = [
     title: "Portfolio Website",
     description: "React + Tailwind ашиглан хийсэн personal portfolio UI.",
     tech: ["React", "Tailwind", "Vite"],
+    link: "https://coupsoft.vercel.app",
   },
   {
     title: "Todo App",
     description: "CRUD үйлдэлтэй simple todo application.",
     tech: ["React", "LocalStorage"],
+    link: "https://coupsoft-todo.vercel.app",
   },
   {
     title: "Weather App",
     description: "API ашиглан realtime weather мэдээлэл харуулна.",
     tech: ["React", "API"],
+    link: "https://your-weather-app.vercel.app",
   },
 ];
 
@@ -38,9 +41,12 @@ export default function Projects() {
       {/* Grid */}
       <div className="grid md:grid-cols-3 gap-8">
         {projects.map((project, index) => (
-          <div
+          <a
             key={index}
-            className="group relative p-[1px] rounded-2xl bg-gradient-to-br from-white/10 to-white/5"
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative p-[1px] rounded-2xl bg-gradient-to-br from-white/10 to-white/5 block"
           >
             {/* Inner card */}
             <div
@@ -80,15 +86,14 @@ export default function Projects() {
               {/* bottom glow */}
               <div className="mt-6 h-[1px] w-0 bg-gradient-to-r from-transparent via-[#00FF94] to-transparent group-hover:w-full transition-all duration-500"></div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
+
       {/* Premium Divider */}
       <div className="relative mt-28 flex items-center justify-center">
-        {/* Left line */}
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-white/10 to-[#00FF94]/30"></div>
 
-        {/* Center Glow Orb */}
         <div className="relative mx-6 flex items-center justify-center">
           <div className="absolute w-16 h-16 bg-[#00FF94]/20 blur-2xl rounded-full"></div>
 
@@ -100,7 +105,6 @@ export default function Projects() {
           />
         </div>
 
-        {/* Right line */}
         <div className="h-[1px] w-full bg-gradient-to-l from-transparent via-white/10 to-[#00FF94]/30"></div>
       </div>
     </section>
