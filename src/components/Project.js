@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Todo App",
     description: "CRUD үйлдэлтэй simple todo application.",
-    tech: ["React", "LocalStorage"],
+    tech: ["React", "LocalStorage", "Vite", "Tailwind"],
     link: "https://coupsoft-todo.vercel.app",
   },
   {
